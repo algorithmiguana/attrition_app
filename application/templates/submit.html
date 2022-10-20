@@ -1,0 +1,17 @@
+<form method="POST">
+
+    {# This hidden_tag is a CSRF security feature. #}
+
+    {{ form.hidden_tag() }}
+    <div class = 'jumbotron' >
+        <h1> Iris dataset: Classification</h1><br><br>
+
+        {{ form.SepalLengthCm.label }} {{ form.SepalLengthCm() }}<br><br>
+        {{ form.SepalWidthCm.label }} {{ form.SepalWidthCm() }}<br><br>
+        {{ form.PetalLengthCm.label }} {{ form.PetalLengthCm() }}<br><br>
+        {{ form.PetalWidthCm.label }} {{ form.PetalWidthCm() }}<br><br>
+
+        {{ form.submit() }}<br><br>
+
+    </div>
+</form>
